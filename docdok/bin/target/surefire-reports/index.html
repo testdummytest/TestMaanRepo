@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods, 4 failed,  8 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="UiRegressionTests.MobileTests.PatientTests" class="method navigator-link" hash-for-method="existingHyCarePatientCanLoginSuccessfully(Entities.Patient@242b6e1a)">existingHyCarePatientCanLoginSuccessfully(Entities.Patient@242b6e1a)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="UiRegressionTests.HybridTests.patientTests" class="method navigator-link" hash-for-method="shouldVerifyValidationOfNewHyCarePatient">shouldVerifyValidationOfNewHyCarePatient</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="UiRegressionTests.MobileTests.PatientTests" class="method navigator-link" hash-for-method="verifyThatCanLogoutSuccessfullyFromTheApp(Entities.Patient@2f897dab)">verifyThatCanLogoutSuccessfullyFromTheApp(Entities.Patient@2f897dab)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="UiRegressionTests.MobileTests.PatientTests" class="method navigator-link" hash-for-method="verifyThatTheTermsAndConditionsIsExistInTheProfileTab(Entities.Patient@d5d5353)">verifyThatTheTermsAndConditionsIsExistInTheProfileTab(Entities.Patient@d5d5353)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods skipped suite-Surefire_suite"> (hide)</a> <!-- hide-methods skipped suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods skipped suite-Surefire_suite"> (show)</a> <!-- show-methods skipped suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Surefire_suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="UiRegressionTests.WebTests.SelfRegistrationTests.SalutaSelfRegistrationTests.SalutaSelfRegistrationTests" class="method navigator-link" hash-for-method="createPatient(Entities.Patient@1cc680e, Entities.Admin@1dc3502b)">createPatient(Entities.Patient@1cc680e, Entities.Admin@1dc3502b)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.EventsTests" class="method navigator-link" hash-for-method="shouldVerifyEventStatus(Entities.Doctor@39a87e72, Entities.Patient@5d2828c9)">shouldVerifyEventStatus(Entities.Doctor@39a87e72, Entities.Patient@5d2828c9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.EventsTests" class="method navigator-link" hash-for-method="shouldVerifyEventValidation(Entities.Doctor@333c8791, Entities.Patient@6c0e13b7)">shouldVerifyEventValidation(Entities.Doctor@333c8791, Entities.Patient@6c0e13b7)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.EventsTests" class="method navigator-link" hash-for-method="shouldVerifyThatTheMonthlyWeeklyAndDailyViewsLookLikeTheyShouldBe(Entities.Doctor@22eaa86e, Entities.Patient@561b7d53)">shouldVerifyThatTheMonthlyWeeklyAndDailyViewsLookLikeTheyShouldBe(Entities.Doctor@22eaa86e, Entities.Patient@561b7d53)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="UiRegressionTests.HybridTests.patientTests" class="method navigator-link" hash-for-method="shouldVerifyThatThePatientCanSeeDoctorMessages(Entities.Patient@58f39564, Entities.Doctor@7b948f3e)">shouldVerifyThatThePatientCanSeeDoctorMessages(Entities.Patient@58f39564, Entities.Doctor@7b948f3e)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="UiRegressionTests.HybridTests.patientTests" class="method navigator-link" hash-for-method="shouldVerifyThatThePatientCanSeeTheSurveyThatThedoctorSent(Entities.Patient@2f4c2cd4, Entities.Doctor@77a074b4)">shouldVerifyThatThePatientCanSeeTheSurveyThatThedoctorSent(Entities.Patient@2f4c2cd4, Entities.Doctor@77a074b4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.SurveyTests" class="method navigator-link" hash-for-method="shouldVerifyThatTheSurveyIsSentToThePatientByTheDoctor(Entities.Doctor@3a082ff4, Entities.Patient@45acdd11)">shouldVerifyThatTheSurveyIsSentToThePatientByTheDoctor(Entities.Doctor@3a082ff4, Entities.Patient@45acdd11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.MessagesTests" class="method navigator-link" hash-for-method="verifySendingMessageValidation(Entities.Doctor@3f0d6038, Entities.Patient@237f7970)">verifySendingMessageValidation(Entities.Doctor@3f0d6038, Entities.Patient@237f7970)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">UiRegressionTests.HybridTests.patientTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldVerifyValidationOfNewHyCarePatient">
+                  </a> <!-- shouldVerifyValidationOfNewHyCarePatient -->
+                  <span class="method-name">shouldVerifyValidationOfNewHyCarePatient</span>
+                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
+[public void UiRegressionTests.HybridTests.patientTests.shouldVerifyValidationOfNewHyCarePatient(Entities.Patient,Entities.Doctor) throws java.net.MalformedURLException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: shouldVerifyValidationOfNewHyCarePatient([Entities.Patient arg0, Entities.Doctor arg1])
+Arguments: [(Entities.Patient) Entities.Patient@44c79f32,(Entities.Admin) Entities.Admin@7fcbe147,(Entities.Doctor) Entities.Doctor@235f4c10]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">UiRegressionTests.MobileTests.PatientTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="existingHyCarePatientCanLoginSuccessfully(Entities.Patient@242b6e1a)">
+                  </a> <!-- existingHyCarePatientCanLoginSuccessfully(Entities.Patient@242b6e1a) -->
+                  <span class="method-name">existingHyCarePatientCanLoginSuccessfully</span>
+                  <span class="parameters">(Entities.Patient@242b6e1a)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [4696a171-29f6-4d4d-a270-3f39add7b966, findElement {using=xpath, value=//android.view.ViewGroup[@content-desc=&quot;main&quot;]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.widget.Button/android.widget.TextView}]
+Capabilities {appium:appActivity: ch.health.docdok.MainActivity, appium:appPackage: ch.health.docdok, appium:databaseEnabled: false, appium:desired: {appActivity: ch.health.docdok.MainActivity, appPackage: ch.health.docdok, deviceName: emulator-5554, newCommandTimeout: 2000, platformName: ANDROID}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3040, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 2000, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 98, appium:takesScreenshot: true, appium:viewportRect: {height: 2774, left: 0, top: 98, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 4696a171-29f6-4d4d-a270-3f39add7b966
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at PageObjects.Mobile.MobileHomePage.fillUserNameAndPasswordForAnExistingPatient(MobileHomePage.java:36)
+	at UiRegressionTests.MobileTests.PatientTests.existingHyCarePatientCanLoginSuccessfully(PatientTests.java:13)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThatCanLogoutSuccessfullyFromTheApp(Entities.Patient@2f897dab)">
+                  </a> <!-- verifyThatCanLogoutSuccessfullyFromTheApp(Entities.Patient@2f897dab) -->
+                  <span class="method-name">verifyThatCanLogoutSuccessfullyFromTheApp</span>
+                  <span class="parameters">(Entities.Patient@2f897dab)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [a3def268-92d0-4fc5-913d-733e45b50518, findElement {using=xpath, value=//android.view.ViewGroup[@content-desc=&quot;main&quot;]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.widget.Button/android.widget.TextView}]
+Capabilities {appium:appActivity: ch.health.docdok.MainActivity, appium:appPackage: ch.health.docdok, appium:databaseEnabled: false, appium:desired: {appActivity: ch.health.docdok.MainActivity, appPackage: ch.health.docdok, deviceName: emulator-5554, newCommandTimeout: 2000, platformName: ANDROID}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3040, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 2000, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 98, appium:takesScreenshot: true, appium:viewportRect: {height: 2774, left: 0, top: 98, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: a3def268-92d0-4fc5-913d-733e45b50518
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at PageObjects.Mobile.MobileHomePage.fillUserNameAndPasswordForAnExistingPatient(MobileHomePage.java:36)
+	at UiRegressionTests.MobileTests.PatientTests.verifyThatCanLogoutSuccessfullyFromTheApp(PatientTests.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThatTheTermsAndConditionsIsExistInTheProfileTab(Entities.Patient@d5d5353)">
+                  </a> <!-- verifyThatTheTermsAndConditionsIsExistInTheProfileTab(Entities.Patient@d5d5353) -->
+                  <span class="method-name">verifyThatTheTermsAndConditionsIsExistInTheProfileTab</span>
+                  <span class="parameters">(Entities.Patient@d5d5353)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2a1b0569-279a-42e6-b2d2-bbde6b35777a, findElement {using=xpath, value=//android.view.ViewGroup[@content-desc=&quot;main&quot;]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.widget.Button/android.widget.TextView}]
+Capabilities {appium:appActivity: ch.health.docdok.MainActivity, appium:appPackage: ch.health.docdok, appium:databaseEnabled: false, appium:desired: {appActivity: ch.health.docdok.MainActivity, appPackage: ch.health.docdok, deviceName: emulator-5554, newCommandTimeout: 2000, platformName: ANDROID}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3040, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 2000, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 98, appium:takesScreenshot: true, appium:viewportRect: {height: 2774, left: 0, top: 98, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2a1b0569-279a-42e6-b2d2-bbde6b35777a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at PageObjects.Mobile.MobileHomePage.fillUserNameAndPasswordForAnExistingPatient(MobileHomePage.java:36)
+	at UiRegressionTests.MobileTests.PatientTests.verifyThatTheTermsAndConditionsIsExistInTheProfileTab(PatientTests.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">UiRegressionTests.HybridTests.patientTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldVerifyThatThePatientCanSeeDoctorMessages(Entities.Patient@58f39564, Entities.Doctor@7b948f3e)">
+                  </a> <!-- shouldVerifyThatThePatientCanSeeDoctorMessages(Entities.Patient@58f39564, Entities.Doctor@7b948f3e) -->
+                  <span class="method-name">shouldVerifyThatThePatientCanSeeDoctorMessages</span>
+                  <span class="parameters">(Entities.Patient@58f39564,Entities.Doctor@7b948f3e)</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: org.openqa.selenium.chrome.ChromeDriverService$Builder.getLogOutput(Ljava/lang/String;)Ljava/io/OutputStream;
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.createDriverService(ChromeDriverService.java:356)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.createDriverService(ChromeDriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:498)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at UiRegressionTests.ChLoginBaseTest.setup(ChLoginBaseTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldVerifyThatThePatientCanSeeTheSurveyThatThedoctorSent(Entities.Patient@2f4c2cd4, Entities.Doctor@77a074b4)">
+                  </a> <!-- shouldVerifyThatThePatientCanSeeTheSurveyThatThedoctorSent(Entities.Patient@2f4c2cd4, Entities.Doctor@77a074b4) -->
+                  <span class="method-name">shouldVerifyThatThePatientCanSeeTheSurveyThatThedoctorSent</span>
+                  <span class="parameters">(Entities.Patient@2f4c2cd4,Entities.Doctor@77a074b4)</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: org.openqa.selenium.chrome.ChromeDriverService$Builder.getLogOutput(Ljava/lang/String;)Ljava/io/OutputStream;
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.createDriverService(ChromeDriverService.java:356)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.createDriverService(ChromeDriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:498)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at UiRegressionTests.ChLoginBaseTest.setup(ChLoginBaseTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.EventsTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldVerifyEventStatus(Entities.Doctor@39a87e72, Entities.Patient@5d2828c9)">
+                  </a> <!-- shouldVerifyEventStatus(Entities.Doctor@39a87e72, Entities.Patient@5d2828c9) -->
+                  <span class="method-name">shouldVerifyEventStatus</span>
+                  <span class="parameters">(Entities.Doctor@39a87e72,Entities.Patient@5d2828c9)</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: org.openqa.selenium.chrome.ChromeDriverService$Builder.getLogOutput(Ljava/lang/String;)Ljava/io/OutputStream;
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.createDriverService(ChromeDriverService.java:356)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.createDriverService(ChromeDriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:498)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at UiRegressionTests.ChLoginBaseTest.setup(ChLoginBaseTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldVerifyEventValidation(Entities.Doctor@333c8791, Entities.Patient@6c0e13b7)">
+                  </a> <!-- shouldVerifyEventValidation(Entities.Doctor@333c8791, Entities.Patient@6c0e13b7) -->
+                  <span class="method-name">shouldVerifyEventValidation</span>
+                  <span class="parameters">(Entities.Doctor@333c8791,Entities.Patient@6c0e13b7)</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: org.openqa.selenium.chrome.ChromeDriverService$Builder.getLogOutput(Ljava/lang/String;)Ljava/io/OutputStream;
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.createDriverService(ChromeDriverService.java:356)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.createDriverService(ChromeDriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:498)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at UiRegressionTests.ChLoginBaseTest.setup(ChLoginBaseTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldVerifyThatTheMonthlyWeeklyAndDailyViewsLookLikeTheyShouldBe(Entities.Doctor@22eaa86e, Entities.Patient@561b7d53)">
+                  </a> <!-- shouldVerifyThatTheMonthlyWeeklyAndDailyViewsLookLikeTheyShouldBe(Entities.Doctor@22eaa86e, Entities.Patient@561b7d53) -->
+                  <span class="method-name">shouldVerifyThatTheMonthlyWeeklyAndDailyViewsLookLikeTheyShouldBe</span>
+                  <span class="parameters">(Entities.Doctor@22eaa86e,Entities.Patient@561b7d53)</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: org.openqa.selenium.chrome.ChromeDriverService$Builder.getLogOutput(Ljava/lang/String;)Ljava/io/OutputStream;
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.createDriverService(ChromeDriverService.java:356)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.createDriverService(ChromeDriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:498)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at UiRegressionTests.ChLoginBaseTest.setup(ChLoginBaseTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">UiRegressionTests.WebTests.SelfRegistrationTests.SalutaSelfRegistrationTests.SalutaSelfRegistrationTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPatient(Entities.Patient@1cc680e, Entities.Admin@1dc3502b)">
+                  </a> <!-- createPatient(Entities.Patient@1cc680e, Entities.Admin@1dc3502b) -->
+                  <span class="method-name">createPatient</span>
+                  <span class="parameters">(Entities.Patient@1cc680e,Entities.Admin@1dc3502b)</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: org.openqa.selenium.chrome.ChromeDriverService$Builder.getLogOutput(Ljava/lang/String;)Ljava/io/OutputStream;
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.createDriverService(ChromeDriverService.java:356)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.createDriverService(ChromeDriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:498)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at UiRegressionTests.SalutaBaseTest.setup(SalutaBaseTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.MessagesTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySendingMessageValidation(Entities.Doctor@3f0d6038, Entities.Patient@237f7970)">
+                  </a> <!-- verifySendingMessageValidation(Entities.Doctor@3f0d6038, Entities.Patient@237f7970) -->
+                  <span class="method-name">verifySendingMessageValidation</span>
+                  <span class="parameters">(Entities.Doctor@3f0d6038,Entities.Patient@237f7970)</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: org.openqa.selenium.chrome.ChromeDriverService$Builder.getLogOutput(Ljava/lang/String;)Ljava/io/OutputStream;
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.createDriverService(ChromeDriverService.java:356)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.createDriverService(ChromeDriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:498)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at UiRegressionTests.ChLoginBaseTest.setup(ChLoginBaseTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.SurveyTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldVerifyThatTheSurveyIsSentToThePatientByTheDoctor(Entities.Doctor@3a082ff4, Entities.Patient@45acdd11)">
+                  </a> <!-- shouldVerifyThatTheSurveyIsSentToThePatientByTheDoctor(Entities.Doctor@3a082ff4, Entities.Patient@45acdd11) -->
+                  <span class="method-name">shouldVerifyThatTheSurveyIsSentToThePatientByTheDoctor</span>
+                  <span class="parameters">(Entities.Doctor@3a082ff4,Entities.Patient@45acdd11)</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: org.openqa.selenium.chrome.ChromeDriverService$Builder.getLogOutput(Ljava/lang/String;)Ljava/io/OutputStream;
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.createDriverService(ChromeDriverService.java:356)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.createDriverService(ChromeDriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:498)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at UiRegressionTests.ChLoginBaseTest.setup(ChLoginBaseTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;PageObjects.TestingUtilPage&quot;/&gt;
+      &lt;class name=&quot;UiRegressionTests.ChLoginBaseTest&quot;/&gt;
+      &lt;class name=&quot;UiRegressionTests.DeLoginBaseTest&quot;/&gt;
+      &lt;class name=&quot;UiRegressionTests.HybridTests.patientTests&quot;/&gt;
+      &lt;class name=&quot;UiRegressionTests.MobileBaseTest&quot;/&gt;
+      &lt;class name=&quot;UiRegressionTests.MobileTests.PatientTests&quot;/&gt;
+      &lt;class name=&quot;UiRegressionTests.SalutaBaseTest&quot;/&gt;
+      &lt;class name=&quot;UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.EventsTests&quot;/&gt;
+      &lt;class name=&quot;UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.MessagesTests&quot;/&gt;
+      &lt;class name=&quot;UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.SurveyTests&quot;/&gt;
+      &lt;class name=&quot;UiRegressionTests.WebTests.SelfRegistrationTests.SalutaSelfRegistrationTests.SalutaSelfRegistrationTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (11 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyThatCanLogoutSuccessfullyFromTheApp')
+data.setCell(0, 2, 'UiRegressionTests.MobileTests.PatientTests')
+data.setCell(0, 3, 375);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'existingHyCarePatientCanLoginSuccessfully')
+data.setCell(1, 2, 'UiRegressionTests.MobileTests.PatientTests')
+data.setCell(1, 3, 310);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyThatTheTermsAndConditionsIsExistInTheProfileTab')
+data.setCell(2, 2, 'UiRegressionTests.MobileTests.PatientTests')
+data.setCell(2, 3, 293);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'shouldVerifyValidationOfNewHyCarePatient')
+data.setCell(3, 2, 'UiRegressionTests.HybridTests.patientTests')
+data.setCell(3, 3, 2);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'shouldVerifyThatThePatientCanSeeTheSurveyThatThedoctorSent')
+data.setCell(4, 2, 'UiRegressionTests.HybridTests.patientTests')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'shouldVerifyEventStatus')
+data.setCell(5, 2, 'UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.EventsTests')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'shouldVerifyThatTheSurveyIsSentToThePatientByTheDoctor')
+data.setCell(6, 2, 'UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.SurveyTests')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifySendingMessageValidation')
+data.setCell(7, 2, 'UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.MessagesTests')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'shouldVerifyThatThePatientCanSeeDoctorMessages')
+data.setCell(8, 2, 'UiRegressionTests.HybridTests.patientTests')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'shouldVerifyEventValidation')
+data.setCell(9, 2, 'UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.EventsTests')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'shouldVerifyThatTheMonthlyWeeklyAndDailyViewsLookLikeTheyShouldBe')
+data.setCell(10, 2, 'UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.EventsTests')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'createPatient')
+data.setCell(11, 2, 'UiRegressionTests.WebTests.SelfRegistrationTests.SalutaSelfRegistrationTests.SalutaSelfRegistrationTests')
+data.setCell(11, 3, 0);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 981 ms</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">UiRegressionTests.HybridTests.patientTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldVerifyThatThePatientCanSeeDoctorMessages(Entities.Patient@58f39564, Entities.Doctor@7b948f3e)</span>
+                <span class="method-start">358 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">359 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">shouldVerifyThatThePatientCanSeeTheSurveyThatThedoctorSent(Entities.Patient@2f4c2cd4, Entities.Doctor@77a074b4)</span>
+                <span class="method-start">361 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">361 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">362 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">UiRegressionTests.MobileTests.PatientTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">367 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">existingHyCarePatientCanLoginSuccessfully(Entities.Patient@242b6e1a)</span>
+                <span class="method-start">20088 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">20401 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">20498 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyThatCanLogoutSuccessfullyFromTheApp(Entities.Patient@2f897dab)</span>
+                <span class="method-start">34408 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">34784 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">34885 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyThatTheTermsAndConditionsIsExistInTheProfileTab(Entities.Patient@d5d5353)</span>
+                <span class="method-start">48269 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">48564 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.EventsTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup</span>
+                <span class="method-start">48655 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldVerifyEventStatus(Entities.Doctor@39a87e72, Entities.Patient@5d2828c9)</span>
+                <span class="method-start">48702 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">48703 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">48704 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldVerifyEventValidation(Entities.Doctor@333c8791, Entities.Patient@6c0e13b7)</span>
+                <span class="method-start">48704 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">48705 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">48705 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">shouldVerifyThatTheMonthlyWeeklyAndDailyViewsLookLikeTheyShouldBe(Entities.Doctor@22eaa86e, Entities.Patient@561b7d53)</span>
+                <span class="method-start">48706 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">48706 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.MessagesTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup</span>
+                <span class="method-start">48707 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySendingMessageValidation(Entities.Doctor@3f0d6038, Entities.Patient@237f7970)</span>
+                <span class="method-start">48745 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">48745 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.SurveyTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup</span>
+                <span class="method-start">48747 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldVerifyThatTheSurveyIsSentToThePatientByTheDoctor(Entities.Doctor@3a082ff4, Entities.Patient@45acdd11)</span>
+                <span class="method-start">48780 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">48781 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">UiRegressionTests.WebTests.SelfRegistrationTests.SalutaSelfRegistrationTests.SalutaSelfRegistrationTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup</span>
+                <span class="method-start">48783 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createPatient(Entities.Patient@1cc680e, Entities.Admin@1dc3502b)</span>
+                <span class="method-start">48814 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">48815 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

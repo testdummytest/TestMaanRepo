@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.SurveyTests">
+        <methods>
+          <include name="shouldVerifyThatTheSurveyIsSentToThePatientByTheDoctor"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.SurveyTests -->
+      <class name="UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.EventsTests">
+        <methods>
+          <include name="shouldVerifyThatTheMonthlyWeeklyAndDailyViewsLookLikeTheyShouldBe"/>
+          <include name="tearDown"/>
+          <include name="shouldVerifyEventValidation"/>
+          <include name="shouldVerifyEventStatus"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.EventsTests -->
+      <class name="UiRegressionTests.WebTests.SelfRegistrationTests.SalutaSelfRegistrationTests.SalutaSelfRegistrationTests">
+        <methods>
+          <include name="createPatient"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- UiRegressionTests.WebTests.SelfRegistrationTests.SalutaSelfRegistrationTests.SalutaSelfRegistrationTests -->
+      <class name="UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.MessagesTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifySendingMessageValidation"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.MessagesTests -->
+      <class name="UiRegressionTests.HybridTests.patientTests">
+        <methods>
+          <include name="shouldVerifyThatThePatientCanSeeDoctorMessages"/>
+          <include name="shouldVerifyValidationOfNewHyCarePatient"/>
+          <include name="shouldVerifyThatThePatientCanSeeTheSurveyThatThedoctorSent"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- UiRegressionTests.HybridTests.patientTests -->
+      <class name="UiRegressionTests.MobileTests.PatientTests">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyThatTheTermsAndConditionsIsExistInTheProfileTab" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="verifyThatCanLogoutSuccessfullyFromTheApp" invocation-numbers="0"/>
+          <include name="existingHyCarePatientCanLoginSuccessfully" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- UiRegressionTests.MobileTests.PatientTests -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

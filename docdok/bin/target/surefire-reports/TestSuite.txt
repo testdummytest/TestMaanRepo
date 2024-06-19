@@ -1,0 +1,63 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 28, Failures: 9, Errors: 0, Skipped: 19, Time elapsed: 49.043 s <<< FAILURE! - in TestSuite
+setup(UiRegressionTests.HybridTests.patientTests)  Time elapsed: 0.877 s  <<< FAILURE!
+java.lang.NoSuchMethodError: org.openqa.selenium.chrome.ChromeDriverService$Builder.getLogOutput(Ljava/lang/String;)Ljava/io/OutputStream;
+
+shouldVerifyValidationOfNewHyCarePatient(UiRegressionTests.HybridTests.patientTests)  Time elapsed: 0.003 s  <<< FAILURE!
+org.testng.internal.reflect.MethodMatcherException: 
+
+[public void UiRegressionTests.HybridTests.patientTests.shouldVerifyValidationOfNewHyCarePatient(Entities.Patient,Entities.Doctor) throws java.net.MalformedURLException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: shouldVerifyValidationOfNewHyCarePatient([Entities.Patient arg0, Entities.Doctor arg1])
+Arguments: [(Entities.Patient) Entities.Patient@611df6e3,(Entities.Admin) Entities.Admin@5f2f577,(Entities.Doctor) Entities.Doctor@6273c5a4]
+
+existingHyCarePatientCanLoginSuccessfully(UiRegressionTests.MobileTests.PatientTests)  Time elapsed: 0.319 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [a2354503-74a3-4b2a-ac97-6c7b50406912, findElement {using=xpath, value=//android.view.ViewGroup[@content-desc="main"]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.widget.Button/android.widget.TextView}]
+Capabilities {appium:appActivity: ch.health.docdok.MainActivity, appium:appPackage: ch.health.docdok, appium:databaseEnabled: false, appium:desired: {appActivity: ch.health.docdok.MainActivity, appPackage: ch.health.docdok, deviceName: emulator-5554, newCommandTimeout: 2000, platformName: ANDROID}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3040, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 2000, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 98, appium:takesScreenshot: true, appium:viewportRect: {height: 2774, left: 0, top: 98, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: a2354503-74a3-4b2a-ac97-6c7b50406912
+	at UiRegressionTests.MobileTests.PatientTests.existingHyCarePatientCanLoginSuccessfully(PatientTests.java:13)
+
+verifyThatCanLogoutSuccessfullyFromTheApp(UiRegressionTests.MobileTests.PatientTests)  Time elapsed: 0.296 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [0289179d-53e9-4032-8e4c-87de7ccdbffc, findElement {using=xpath, value=//android.view.ViewGroup[@content-desc="main"]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.widget.Button/android.widget.TextView}]
+Capabilities {appium:appActivity: ch.health.docdok.MainActivity, appium:appPackage: ch.health.docdok, appium:databaseEnabled: false, appium:desired: {appActivity: ch.health.docdok.MainActivity, appPackage: ch.health.docdok, deviceName: emulator-5554, newCommandTimeout: 2000, platformName: ANDROID}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3040, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 2000, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 98, appium:takesScreenshot: true, appium:viewportRect: {height: 2774, left: 0, top: 98, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 0289179d-53e9-4032-8e4c-87de7ccdbffc
+	at UiRegressionTests.MobileTests.PatientTests.verifyThatCanLogoutSuccessfullyFromTheApp(PatientTests.java:29)
+
+verifyThatTheTermsAndConditionsIsExistInTheProfileTab(UiRegressionTests.MobileTests.PatientTests)  Time elapsed: 0.295 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2be01864-8849-4f4e-875b-15cd0a873555, findElement {using=xpath, value=//android.view.ViewGroup[@content-desc="main"]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.widget.Button/android.widget.TextView}]
+Capabilities {appium:appActivity: ch.health.docdok.MainActivity, appium:appPackage: ch.health.docdok, appium:databaseEnabled: false, appium:desired: {appActivity: ch.health.docdok.MainActivity, appPackage: ch.health.docdok, deviceName: emulator-5554, newCommandTimeout: 2000, platformName: ANDROID}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3040, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 2000, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 98, appium:takesScreenshot: true, appium:viewportRect: {height: 2774, left: 0, top: 98, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2be01864-8849-4f4e-875b-15cd0a873555
+	at UiRegressionTests.MobileTests.PatientTests.verifyThatTheTermsAndConditionsIsExistInTheProfileTab(PatientTests.java:22)
+
+setup(UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.EventsTests)  Time elapsed: 0.475 s  <<< FAILURE!
+java.lang.NoSuchMethodError: org.openqa.selenium.chrome.ChromeDriverService$Builder.getLogOutput(Ljava/lang/String;)Ljava/io/OutputStream;
+
+setup(UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.MessagesTests)  Time elapsed: 0.035 s  <<< FAILURE!
+java.lang.NoSuchMethodError: org.openqa.selenium.chrome.ChromeDriverService$Builder.getLogOutput(Ljava/lang/String;)Ljava/io/OutputStream;
+
+setup(UiRegressionTests.WebTests.DoctorDashboradTests.SalutaDoctorDashboardTests.SurveyTests)  Time elapsed: 0.034 s  <<< FAILURE!
+java.lang.NoSuchMethodError: org.openqa.selenium.chrome.ChromeDriverService$Builder.getLogOutput(Ljava/lang/String;)Ljava/io/OutputStream;
+
+setup(UiRegressionTests.WebTests.SelfRegistrationTests.SalutaSelfRegistrationTests.SalutaSelfRegistrationTests)  Time elapsed: 0.04 s  <<< FAILURE!
+java.lang.NoSuchMethodError: org.openqa.selenium.chrome.ChromeDriverService$Builder.getLogOutput(Ljava/lang/String;)Ljava/io/OutputStream;
+
